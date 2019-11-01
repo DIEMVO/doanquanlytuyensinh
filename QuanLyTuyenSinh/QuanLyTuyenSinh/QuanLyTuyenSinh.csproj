@@ -62,16 +62,70 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\Ketqua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Ketqua.Designer.cs">
+      <DependentUpon>Ketqua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\quanly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\quanly.Designer.cs">
+      <DependentUpon>quanly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\QuanlyAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\QuanlyAccount.Designer.cs">
+      <DependentUpon>QuanlyAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Quanlykhuvuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Quanlykhuvuc.Designer.cs">
+      <DependentUpon>Quanlykhuvuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\QuanLyTuyenSinh.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PresentationLayer\QuanLyTuyenSinh.Designer.cs">
       <DependentUpon>QuanLyTuyenSinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\Thongtintaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Thongtintaikhoan.Designer.cs">
+      <DependentUpon>Thongtintaikhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PresentationLayer\Ketqua.resx">
+      <DependentUpon>Ketqua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\quanly.resx">
+      <DependentUpon>quanly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\QuanlyAccount.resx">
+      <DependentUpon>QuanlyAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\Quanlykhuvuc.resx">
+      <DependentUpon>Quanlykhuvuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\QuanLyTuyenSinh.resx">
       <DependentUpon>QuanLyTuyenSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\Thongtintaikhoan.resx">
+      <DependentUpon>Thongtintaikhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
