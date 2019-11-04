@@ -15,7 +15,7 @@ create table HOSOTHISINH(
 SBD int,
 HoDem varchar(20) not null,
 Ten varchar(10) not null,
-NgaySinh date,
+NgaySinh smalldatetime,
 GioiTinh bit,
 MaHoKhau int,
 MaDoiTuong int,
@@ -76,31 +76,7 @@ DiemCongKV float,
 CONSTRAINT pk_KHUVUC primary key(MaKhuVuc)
 );
 go
--- Tạo khoá ngoại.
 
-alter table HOSOTHISINH
-with nocheck add constraint fk_HOSOTHISINH_DANTOC
-foreign key (MaDanToc) references DANTOC(MaDanToc);
-go
-
-alter table HOSOTHISINH
-with nocheck add constraint fk_HOSOTHISINH_NGANH
-foreign key (MaNganh) references NGANH(MaNganh);
-go
-
-alter table HOSOTHISINH
-with nocheck add constraint fk_HOSOTHISINH_HOKHAU
-foreign key (MaHoKhau) references HOKHAU(MaHoKhau);
-
-alter table HOSOTHISINH
-with nocheck add constraint fk_HOSOTHISINH_DOITUONG
-foreign key (MaDoiTuong) references DOITUONG(MaDoiTuong);
-go
-
-alter table HOSOTHISINH
-with nocheck add constraint fk_HOSOTHISINH_DIEM
-foreign key(SBD) references DIEM(SBD);
-go
 /*
 alter table DIEM
 with nocheck add constraint fk_DIEM_HOSOTHISINH
@@ -214,6 +190,72 @@ insert DOITUONG(MaDoiTuong, LoaiDoiTuong, DiemCongDTuong) values
 (12,'Chung Nhan Nghe Loai Kha',1.5),
 (13,'Chung Nhan Nghe Loai Trung Binh',1)
 go
+
+insert HOSOTHISINH (SBD,HoDem,Ten,NgaySinh,GioiTinh,MaHoKhau,MaDoiTuong,MaDanToc,MaNganh,NguyenVong)
+values
+(1,'Le Quoc Nguyen','VUong',CAST('2019-11-25 00:00:00' as smalldatetime),1,1,1,1,'7480201C',1),
+(2,'Vo Thanh','Tam',CAST('2019-11-25 00:00:00' as smalldatetime),1,2,1,1,'7480201C',1),
+(3,'Phan Dinh','Hoang',CAST('2019-11-25 00:00:00' as smalldatetime),3,1,1,1,'7480201C',1)
+go
+
+insert DANTOC(MaDanToc,TenDanToc,DiemCongDToc)
+values
+(1,'Kinh',0),
+(2,'Tay',0),
+(3,'Thai',0),
+(4,'Muong',0),
+(5,'Kho Me',0),
+(6,'H Mong',1),
+(7,'Nung',1),
+(8,'Hoa',1),
+(9,'Dao',1.5),
+(10,'Gia Rai',1.5),
+(11,'E De',1.5),
+(12,'Ba Na',1.5),
+(13,'Xo Dang',2),
+(14,'San Chay',2),
+(15,'Co Ho',2),
+(16,'Cham',2),
+(17,'San Diu',2.5),
+(18,'Hre',2.5),
+(19,'Ra Giai',2.5),
+(20,'M Nong',2.5),
+(21,'X tieng',3)
+go
+
+insert HOKHAU(MaHoKhau,TenHuyen,TenTinh,MaKhuVuc)
+values
+(1,'Phan Thiet','Binh Thuan','II'),
+(2,'Trang Boom','Dong Nai','II'),
+(3,'Quan 1','TP.Ho Chi Minh','III')
+go
+
+-- Tạo khoá ngoại.
+
+alter table HOSOTHISINH
+with nocheck add constraint fk_HOSOTHISINH_DANTOC
+foreign key (MaDanToc) references DANTOC(MaDanToc);
+go
+
+alter table HOSOTHISINH
+with nocheck add constraint fk_HOSOTHISINH_NGANH
+foreign key (MaNganh) references NGANH(MaNganh);
+go
+
+alter table HOSOTHISINH
+with nocheck add constraint fk_HOSOTHISINH_HOKHAU
+foreign key (MaHoKhau) references HOKHAU(MaHoKhau);
+
+alter table HOSOTHISINH
+with nocheck add constraint fk_HOSOTHISINH_DOITUONG
+foreign key (MaDoiTuong) references DOITUONG(MaDoiTuong);
+go
+
+alter table HOSOTHISINH
+with nocheck add constraint fk_HOSOTHISINH_DIEM
+foreign key(SBD) references DIEM(SBD);
+go
+
 -- drop table
 --use QuanLyTuyenSinh;
 --go
