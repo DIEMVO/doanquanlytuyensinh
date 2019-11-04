@@ -86,11 +86,23 @@
     <Compile Include="PresentationLayer\QuanlyAccount.Designer.cs">
       <DependentUpon>QuanlyAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\quanlydoituong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\quanlydoituong.Designer.cs">
+      <DependentUpon>quanlydoituong.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Quanlykhuvuc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PresentationLayer\Quanlykhuvuc.Designer.cs">
       <DependentUpon>Quanlykhuvuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Quanlynganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Quanlynganh.Designer.cs">
+      <DependentUpon>Quanlynganh.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\QuanLyTuyenSinh.cs">
       <SubType>Form</SubType>
@@ -118,8 +130,14 @@
     <EmbeddedResource Include="PresentationLayer\QuanlyAccount.resx">
       <DependentUpon>QuanlyAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\quanlydoituong.resx">
+      <DependentUpon>quanlydoituong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Quanlykhuvuc.resx">
       <DependentUpon>Quanlykhuvuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\Quanlynganh.resx">
+      <DependentUpon>Quanlynganh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\QuanLyTuyenSinh.resx">
       <DependentUpon>QuanLyTuyenSinh.cs</DependentUpon>
