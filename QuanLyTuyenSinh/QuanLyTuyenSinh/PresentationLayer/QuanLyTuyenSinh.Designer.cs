@@ -54,8 +54,6 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.dataGridView_QLTS = new System.Windows.Forms.DataGridView();
-            this.Label_MaSoThiSinh = new System.Windows.Forms.Label();
-            this.text_MSThiSinh = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,13 +65,19 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Label_MaSoThiSinh = new System.Windows.Forms.Label();
+            this.text_MSThiSinh = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_QLTS)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Label_TenThiSinh
             // 
             this.Label_TenThiSinh.AutoSize = true;
-            this.Label_TenThiSinh.Location = new System.Drawing.Point(12, 72);
+            this.Label_TenThiSinh.Location = new System.Drawing.Point(1, 53);
             this.Label_TenThiSinh.Name = "Label_TenThiSinh";
             this.Label_TenThiSinh.Size = new System.Drawing.Size(70, 13);
             this.Label_TenThiSinh.TabIndex = 0;
@@ -81,7 +85,7 @@
             // 
             // text_TenThiSinh
             // 
-            this.text_TenThiSinh.Location = new System.Drawing.Point(101, 69);
+            this.text_TenThiSinh.Location = new System.Drawing.Point(90, 50);
             this.text_TenThiSinh.Name = "text_TenThiSinh";
             this.text_TenThiSinh.Size = new System.Drawing.Size(121, 20);
             this.text_TenThiSinh.TabIndex = 1;
@@ -89,7 +93,7 @@
             // Label_NgaySinh
             // 
             this.Label_NgaySinh.AutoSize = true;
-            this.Label_NgaySinh.Location = new System.Drawing.Point(12, 113);
+            this.Label_NgaySinh.Location = new System.Drawing.Point(1, 94);
             this.Label_NgaySinh.Name = "Label_NgaySinh";
             this.Label_NgaySinh.Size = new System.Drawing.Size(56, 13);
             this.Label_NgaySinh.TabIndex = 2;
@@ -98,7 +102,7 @@
             // Label_GioiTinh
             // 
             this.Label_GioiTinh.AutoSize = true;
-            this.Label_GioiTinh.Location = new System.Drawing.Point(12, 146);
+            this.Label_GioiTinh.Location = new System.Drawing.Point(1, 127);
             this.Label_GioiTinh.Name = "Label_GioiTinh";
             this.Label_GioiTinh.Size = new System.Drawing.Size(51, 13);
             this.Label_GioiTinh.TabIndex = 3;
@@ -107,7 +111,7 @@
             // Label_HoKhau
             // 
             this.Label_HoKhau.AutoSize = true;
-            this.Label_HoKhau.Location = new System.Drawing.Point(255, 72);
+            this.Label_HoKhau.Location = new System.Drawing.Point(244, 53);
             this.Label_HoKhau.Name = "Label_HoKhau";
             this.Label_HoKhau.Size = new System.Drawing.Size(49, 13);
             this.Label_HoKhau.TabIndex = 4;
@@ -116,7 +120,7 @@
             // cbbox_NgaySinh
             // 
             this.cbbox_NgaySinh.FormattingEnabled = true;
-            this.cbbox_NgaySinh.Location = new System.Drawing.Point(101, 110);
+            this.cbbox_NgaySinh.Location = new System.Drawing.Point(90, 91);
             this.cbbox_NgaySinh.Name = "cbbox_NgaySinh";
             this.cbbox_NgaySinh.Size = new System.Drawing.Size(121, 21);
             this.cbbox_NgaySinh.TabIndex = 5;
@@ -124,14 +128,14 @@
             // cbbox_GioiTinh
             // 
             this.cbbox_GioiTinh.FormattingEnabled = true;
-            this.cbbox_GioiTinh.Location = new System.Drawing.Point(101, 143);
+            this.cbbox_GioiTinh.Location = new System.Drawing.Point(90, 124);
             this.cbbox_GioiTinh.Name = "cbbox_GioiTinh";
             this.cbbox_GioiTinh.Size = new System.Drawing.Size(121, 21);
             this.cbbox_GioiTinh.TabIndex = 6;
             // 
             // text_HoKhau
             // 
-            this.text_HoKhau.Location = new System.Drawing.Point(318, 69);
+            this.text_HoKhau.Location = new System.Drawing.Point(307, 50);
             this.text_HoKhau.Name = "text_HoKhau";
             this.text_HoKhau.Size = new System.Drawing.Size(121, 20);
             this.text_HoKhau.TabIndex = 7;
@@ -139,7 +143,7 @@
             // Label_DoiTuong
             // 
             this.Label_DoiTuong.AutoSize = true;
-            this.Label_DoiTuong.Location = new System.Drawing.Point(255, 35);
+            this.Label_DoiTuong.Location = new System.Drawing.Point(244, 16);
             this.Label_DoiTuong.Name = "Label_DoiTuong";
             this.Label_DoiTuong.Size = new System.Drawing.Size(57, 13);
             this.Label_DoiTuong.TabIndex = 8;
@@ -148,7 +152,7 @@
             // Label_KhuVuc
             // 
             this.Label_KhuVuc.AutoSize = true;
-            this.Label_KhuVuc.Location = new System.Drawing.Point(255, 113);
+            this.Label_KhuVuc.Location = new System.Drawing.Point(244, 94);
             this.Label_KhuVuc.Name = "Label_KhuVuc";
             this.Label_KhuVuc.Size = new System.Drawing.Size(48, 13);
             this.Label_KhuVuc.TabIndex = 9;
@@ -157,7 +161,7 @@
             // Label_MaTinh
             // 
             this.Label_MaTinh.AutoSize = true;
-            this.Label_MaTinh.Location = new System.Drawing.Point(255, 146);
+            this.Label_MaTinh.Location = new System.Drawing.Point(244, 127);
             this.Label_MaTinh.Name = "Label_MaTinh";
             this.Label_MaTinh.Size = new System.Drawing.Size(46, 13);
             this.Label_MaTinh.TabIndex = 10;
@@ -166,7 +170,7 @@
             // Label_MaHuyen
             // 
             this.Label_MaHuyen.AutoSize = true;
-            this.Label_MaHuyen.Location = new System.Drawing.Point(489, 35);
+            this.Label_MaHuyen.Location = new System.Drawing.Point(478, 16);
             this.Label_MaHuyen.Name = "Label_MaHuyen";
             this.Label_MaHuyen.Size = new System.Drawing.Size(56, 13);
             this.Label_MaHuyen.TabIndex = 11;
@@ -175,7 +179,7 @@
             // cbbox_DoiTuong
             // 
             this.cbbox_DoiTuong.FormattingEnabled = true;
-            this.cbbox_DoiTuong.Location = new System.Drawing.Point(318, 32);
+            this.cbbox_DoiTuong.Location = new System.Drawing.Point(307, 13);
             this.cbbox_DoiTuong.Name = "cbbox_DoiTuong";
             this.cbbox_DoiTuong.Size = new System.Drawing.Size(121, 21);
             this.cbbox_DoiTuong.TabIndex = 12;
@@ -183,7 +187,7 @@
             // cbbox_KhuVuc
             // 
             this.cbbox_KhuVuc.FormattingEnabled = true;
-            this.cbbox_KhuVuc.Location = new System.Drawing.Point(318, 110);
+            this.cbbox_KhuVuc.Location = new System.Drawing.Point(307, 91);
             this.cbbox_KhuVuc.Name = "cbbox_KhuVuc";
             this.cbbox_KhuVuc.Size = new System.Drawing.Size(121, 21);
             this.cbbox_KhuVuc.TabIndex = 13;
@@ -191,7 +195,7 @@
             // cbbox_MaTinh
             // 
             this.cbbox_MaTinh.FormattingEnabled = true;
-            this.cbbox_MaTinh.Location = new System.Drawing.Point(318, 143);
+            this.cbbox_MaTinh.Location = new System.Drawing.Point(307, 124);
             this.cbbox_MaTinh.Name = "cbbox_MaTinh";
             this.cbbox_MaTinh.Size = new System.Drawing.Size(121, 21);
             this.cbbox_MaTinh.TabIndex = 14;
@@ -199,7 +203,7 @@
             // cbbox_MaHuyen
             // 
             this.cbbox_MaHuyen.FormattingEnabled = true;
-            this.cbbox_MaHuyen.Location = new System.Drawing.Point(555, 32);
+            this.cbbox_MaHuyen.Location = new System.Drawing.Point(544, 13);
             this.cbbox_MaHuyen.Name = "cbbox_MaHuyen";
             this.cbbox_MaHuyen.Size = new System.Drawing.Size(121, 21);
             this.cbbox_MaHuyen.TabIndex = 15;
@@ -207,7 +211,7 @@
             // Label_Nganh
             // 
             this.Label_Nganh.AutoSize = true;
-            this.Label_Nganh.Location = new System.Drawing.Point(489, 72);
+            this.Label_Nganh.Location = new System.Drawing.Point(478, 53);
             this.Label_Nganh.Name = "Label_Nganh";
             this.Label_Nganh.Size = new System.Drawing.Size(39, 13);
             this.Label_Nganh.TabIndex = 16;
@@ -216,7 +220,7 @@
             // Label_DanToc
             // 
             this.Label_DanToc.AutoSize = true;
-            this.Label_DanToc.Location = new System.Drawing.Point(489, 113);
+            this.Label_DanToc.Location = new System.Drawing.Point(478, 94);
             this.Label_DanToc.Name = "Label_DanToc";
             this.Label_DanToc.Size = new System.Drawing.Size(49, 13);
             this.Label_DanToc.TabIndex = 17;
@@ -225,7 +229,7 @@
             // cbbox_Nganh
             // 
             this.cbbox_Nganh.FormattingEnabled = true;
-            this.cbbox_Nganh.Location = new System.Drawing.Point(555, 69);
+            this.cbbox_Nganh.Location = new System.Drawing.Point(544, 50);
             this.cbbox_Nganh.Name = "cbbox_Nganh";
             this.cbbox_Nganh.Size = new System.Drawing.Size(121, 21);
             this.cbbox_Nganh.TabIndex = 18;
@@ -233,7 +237,7 @@
             // cbbox_DanToc
             // 
             this.cbbox_DanToc.FormattingEnabled = true;
-            this.cbbox_DanToc.Location = new System.Drawing.Point(555, 110);
+            this.cbbox_DanToc.Location = new System.Drawing.Point(544, 91);
             this.cbbox_DanToc.Name = "cbbox_DanToc";
             this.cbbox_DanToc.Size = new System.Drawing.Size(121, 21);
             this.cbbox_DanToc.TabIndex = 19;
@@ -244,7 +248,7 @@
             this.btn_NhapLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhapLai.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_NhapLai.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_NhapLai.Location = new System.Drawing.Point(691, 30);
+            this.btn_NhapLai.Location = new System.Drawing.Point(7, 2);
             this.btn_NhapLai.Name = "btn_NhapLai";
             this.btn_NhapLai.Size = new System.Drawing.Size(75, 23);
             this.btn_NhapLai.TabIndex = 20;
@@ -253,7 +257,7 @@
             // 
             // btn_LuuLai
             // 
-            this.btn_LuuLai.Location = new System.Drawing.Point(691, 67);
+            this.btn_LuuLai.Location = new System.Drawing.Point(7, 39);
             this.btn_LuuLai.Name = "btn_LuuLai";
             this.btn_LuuLai.Size = new System.Drawing.Size(75, 23);
             this.btn_LuuLai.TabIndex = 21;
@@ -262,7 +266,7 @@
             // 
             // btn_CapNhat
             // 
-            this.btn_CapNhat.Location = new System.Drawing.Point(691, 108);
+            this.btn_CapNhat.Location = new System.Drawing.Point(7, 80);
             this.btn_CapNhat.Name = "btn_CapNhat";
             this.btn_CapNhat.Size = new System.Drawing.Size(75, 23);
             this.btn_CapNhat.TabIndex = 22;
@@ -271,7 +275,7 @@
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.Location = new System.Drawing.Point(691, 141);
+            this.btn_Xoa.Location = new System.Drawing.Point(7, 113);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(75, 23);
             this.btn_Xoa.TabIndex = 23;
@@ -280,7 +284,7 @@
             // 
             // btn_Thoat
             // 
-            this.btn_Thoat.Location = new System.Drawing.Point(691, 175);
+            this.btn_Thoat.Location = new System.Drawing.Point(7, 147);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(75, 23);
             this.btn_Thoat.TabIndex = 24;
@@ -306,22 +310,7 @@
             this.dataGridView_QLTS.Name = "dataGridView_QLTS";
             this.dataGridView_QLTS.Size = new System.Drawing.Size(751, 209);
             this.dataGridView_QLTS.TabIndex = 25;
-            // 
-            // Label_MaSoThiSinh
-            // 
-            this.Label_MaSoThiSinh.AutoSize = true;
-            this.Label_MaSoThiSinh.Location = new System.Drawing.Point(12, 35);
-            this.Label_MaSoThiSinh.Name = "Label_MaSoThiSinh";
-            this.Label_MaSoThiSinh.Size = new System.Drawing.Size(82, 13);
-            this.Label_MaSoThiSinh.TabIndex = 26;
-            this.Label_MaSoThiSinh.Text = "Mã Số Thí Sinh";
-            // 
-            // text_MSThiSinh
-            // 
-            this.text_MSThiSinh.Location = new System.Drawing.Point(101, 32);
-            this.text_MSThiSinh.Name = "text_MSThiSinh";
-            this.text_MSThiSinh.Size = new System.Drawing.Size(121, 20);
-            this.text_MSThiSinh.TabIndex = 27;
+            
             // 
             // Column1
             // 
@@ -378,44 +367,78 @@
             this.Column11.HeaderText = "Dân Tộc";
             this.Column11.Name = "Column11";
             // 
+            // Label_MaSoThiSinh
+            // 
+            this.Label_MaSoThiSinh.AutoSize = true;
+            this.Label_MaSoThiSinh.Location = new System.Drawing.Point(1, 16);
+            this.Label_MaSoThiSinh.Name = "Label_MaSoThiSinh";
+            this.Label_MaSoThiSinh.Size = new System.Drawing.Size(82, 13);
+            this.Label_MaSoThiSinh.TabIndex = 26;
+            this.Label_MaSoThiSinh.Text = "Mã Số Thí Sinh";
+            // 
+            // text_MSThiSinh
+            // 
+            this.text_MSThiSinh.Location = new System.Drawing.Point(90, 13);
+            this.text_MSThiSinh.Name = "text_MSThiSinh";
+            this.text_MSThiSinh.Size = new System.Drawing.Size(121, 20);
+            this.text_MSThiSinh.TabIndex = 27;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.text_MSThiSinh);
+            this.panel1.Controls.Add(this.Label_MaSoThiSinh);
+            this.panel1.Controls.Add(this.cbbox_DanToc);
+            this.panel1.Controls.Add(this.cbbox_Nganh);
+            this.panel1.Controls.Add(this.Label_DanToc);
+            this.panel1.Controls.Add(this.Label_Nganh);
+            this.panel1.Controls.Add(this.cbbox_MaHuyen);
+            this.panel1.Controls.Add(this.cbbox_MaTinh);
+            this.panel1.Controls.Add(this.cbbox_KhuVuc);
+            this.panel1.Controls.Add(this.cbbox_DoiTuong);
+            this.panel1.Controls.Add(this.Label_MaHuyen);
+            this.panel1.Controls.Add(this.Label_MaTinh);
+            this.panel1.Controls.Add(this.Label_KhuVuc);
+            this.panel1.Controls.Add(this.Label_DoiTuong);
+            this.panel1.Controls.Add(this.text_HoKhau);
+            this.panel1.Controls.Add(this.cbbox_GioiTinh);
+            this.panel1.Controls.Add(this.cbbox_NgaySinh);
+            this.panel1.Controls.Add(this.Label_HoKhau);
+            this.panel1.Controls.Add(this.Label_GioiTinh);
+            this.panel1.Controls.Add(this.Label_NgaySinh);
+            this.panel1.Controls.Add(this.text_TenThiSinh);
+            this.panel1.Controls.Add(this.Label_TenThiSinh);
+            this.panel1.Location = new System.Drawing.Point(11, 19);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(674, 156);
+            this.panel1.TabIndex = 28;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btn_Thoat);
+            this.panel2.Controls.Add(this.btn_Xoa);
+            this.panel2.Controls.Add(this.btn_CapNhat);
+            this.panel2.Controls.Add(this.btn_LuuLai);
+            this.panel2.Controls.Add(this.btn_NhapLai);
+            this.panel2.Location = new System.Drawing.Point(684, 28);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(101, 176);
+            this.panel2.TabIndex = 29;
+            // 
             // QuanLyTuyenSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.text_MSThiSinh);
-            this.Controls.Add(this.Label_MaSoThiSinh);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView_QLTS);
-            this.Controls.Add(this.btn_Thoat);
-            this.Controls.Add(this.btn_Xoa);
-            this.Controls.Add(this.btn_CapNhat);
-            this.Controls.Add(this.btn_LuuLai);
-            this.Controls.Add(this.btn_NhapLai);
-            this.Controls.Add(this.cbbox_DanToc);
-            this.Controls.Add(this.cbbox_Nganh);
-            this.Controls.Add(this.Label_DanToc);
-            this.Controls.Add(this.Label_Nganh);
-            this.Controls.Add(this.cbbox_MaHuyen);
-            this.Controls.Add(this.cbbox_MaTinh);
-            this.Controls.Add(this.cbbox_KhuVuc);
-            this.Controls.Add(this.cbbox_DoiTuong);
-            this.Controls.Add(this.Label_MaHuyen);
-            this.Controls.Add(this.Label_MaTinh);
-            this.Controls.Add(this.Label_KhuVuc);
-            this.Controls.Add(this.Label_DoiTuong);
-            this.Controls.Add(this.text_HoKhau);
-            this.Controls.Add(this.cbbox_GioiTinh);
-            this.Controls.Add(this.cbbox_NgaySinh);
-            this.Controls.Add(this.Label_HoKhau);
-            this.Controls.Add(this.Label_GioiTinh);
-            this.Controls.Add(this.Label_NgaySinh);
-            this.Controls.Add(this.text_TenThiSinh);
-            this.Controls.Add(this.Label_TenThiSinh);
             this.Name = "QuanLyTuyenSinh";
             this.Text = "QuanLyTuyenSinh";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_QLTS)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -460,5 +483,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

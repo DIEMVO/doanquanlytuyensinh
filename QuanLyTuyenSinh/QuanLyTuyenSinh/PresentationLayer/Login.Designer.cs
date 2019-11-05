@@ -125,7 +125,8 @@
             this.btndangnhap.Size = new System.Drawing.Size(128, 44);
             this.btndangnhap.TabIndex = 4;
             this.btndangnhap.Text = "&Đăng nhập";
-            this.btndangnhap.UseVisualStyleBackColor = true;
+            this.btndangnhap.UseVisualStyleBackColor = false;
+            this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click);
             // 
             // btnxoa
             // 
@@ -153,6 +154,7 @@
             this.btnthoat.TabIndex = 6;
             this.btnthoat.Text = "&Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // panel2
             // 
@@ -166,12 +168,15 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btndangnhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnthoat;
             this.ClientSize = new System.Drawing.Size(502, 237);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

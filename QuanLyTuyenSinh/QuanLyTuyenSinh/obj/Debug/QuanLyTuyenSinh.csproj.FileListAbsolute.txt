@@ -12,3 +12,23 @@ D:\Học\SQL\Đồ án môn SQL\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLy
 D:\Học\SQL\Đồ án môn SQL\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.csproj.CopyComplete
 D:\Học\SQL\Đồ án môn SQL\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.exe
 D:\Học\SQL\Đồ án môn SQL\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.pdb
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\bin\Debug\QuanLyTuyenSinh.exe.config
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\bin\Debug\QuanLyTuyenSinh.exe
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\bin\Debug\QuanLyTuyenSinh.pdb
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.Ketqua.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.Login.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.quanly.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.QuanlyAccount.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.Quanlykhuvuc.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.QuanLyTuyenSinh.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.Thongtintaikhoan.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.csproj.CopyComplete
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.exe
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.pdb

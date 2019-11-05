@@ -8,6 +8,24 @@ go
 create database QuanLyTuyenSinh;
 go
 -- Tạo Table.
+use QuanLyTuyenSinh;
+go
+
+create table Account
+(
+ID int,
+UserName varchar(50) not null,
+Pass varchar(50) not null,
+TypePerson int not null,
+Constraint pk_Account primary key (ID)
+)
+go 
+
+insert Account(ID,UserName,Pass,TypePerson)
+values
+(1,'Admin','123',1)
+go
+
 use QuanLyTuyenSinh
 go
 
