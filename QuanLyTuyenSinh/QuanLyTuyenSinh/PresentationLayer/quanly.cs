@@ -18,14 +18,11 @@ namespace QuanLyTuyenSinh.PresentationLayer
         public quanly()
         {
             InitializeComponent();
-            Load();
+            
         }
 
-        private void Load()
-        {
 
-        }
-
+        // Có bug
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult dl = MessageBox.Show("Bạn có muốn thoát không?",
@@ -42,12 +39,20 @@ namespace QuanLyTuyenSinh.PresentationLayer
             this.Show();
         }
 
+
+
         private void XemKetQua_Click(object sender, EventArgs e)
         {
             QuanLyTuyenSinh ld = new QuanLyTuyenSinh();
             this.Hide();
             ld.ShowDialog();
             this.Show();
+        }
+
+        private void quanly_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Ban muon thoat", "Thong Bao", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            { e.Cancel = true; }
         }
     }
 }

@@ -10,10 +10,10 @@ namespace QuanLyTuyenSinh
 {
     public class QuanLyTuyenSinhContext
     {
-        private static QuanLyTuyenSinhContext instance;
-        private QuanLyTuyenSinhContext() { }
+        private static QuanLyTuyenSinhContext instance; //Singleton
+        private QuanLyTuyenSinhContext() { } //Ham dung
 
-        private string ConnStr = "Data Source=DESKTOP-6ODFHLP\\VUONGSQL;Initial Catalog=QuanLyTuyenSinh;Integrated Security=True";
+        private string ConnStr = "Data Source=DESKTOP-6ODFHLP\\VUONGSQL;Initial Catalog=QuanLyTuyenSinh;Integrated Security=True"; //Connection
         SqlConnection connection = null;
         SqlCommand command = null;
         SqlDataAdapter data = null;
@@ -25,8 +25,8 @@ namespace QuanLyTuyenSinh
             private set { QuanLyTuyenSinhContext.instance = value; } 
         }
 
-        
-        public DataTable ExecuteQuery(string query,object[] parameter =null)
+        //Thực thi Query
+        public DataTable ExecuteQuery(string query,object[] parameter =null) 
         {
             DataTable datatable = new DataTable();
             using (connection=new SqlConnection(ConnStr))
@@ -52,8 +52,8 @@ namespace QuanLyTuyenSinh
                 connection.Close();
             }
                 return datatable;
-        }
-
+        } 
+        //Dòng thực thi
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             int data = 0;

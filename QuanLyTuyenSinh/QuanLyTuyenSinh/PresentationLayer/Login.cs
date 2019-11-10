@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyTuyenSinh.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,18 +18,40 @@ namespace QuanLyTuyenSinh.PresentationLayer
         {
             InitializeComponent();
         }
-
+        #region Events
         private void btndangnhap_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnthoat_Click(object sender, EventArgs e)
-        {
-            DialogResult dl = MessageBox.Show("Bạn có muốn thoát không?",
-                "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dl == DialogResult.Yes)
+            string userName = tbxname.Text;
+            string passWord = tbxpass.Text;
+            if (CheckLogin(userName,passWord))
+            {
+                QuanLyTuyenSinh form = new QuanLyTuyenSinh();
+                this.Hide();
+                form.Show();
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Dang Nhap Sai");
+            }
         }
+        bool CheckLogin(string userName,string passWord)
+        {
+            return AccountDAO.Instance.Login(userName,passWord);
+        }
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+            if (MessageBox.Show("Ban muon thoat", "Thong Bao", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            { e.Cancel = true; }
+        }
+
+        private void btnxoa_Click(object sender, EventArgs e)
+        {
+            tbxname.Text = "";
+            tbxpass.Text = "";
+            
+        }
+        #endregion
     }
 }

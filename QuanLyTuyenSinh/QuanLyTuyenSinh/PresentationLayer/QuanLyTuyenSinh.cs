@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyTuyenSinh.DAO;
+using QuanLyTuyenSinh.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,9 +23,16 @@ namespace QuanLyTuyenSinh.PresentationLayer
 
         private void LoaddataGridView()
         {
-            string query = " select * from ShowHOSOTHISINH() as Show";
-            
-            dataGridView_QLTS.DataSource = QuanLyTuyenSinhContext.Instance.ExecuteQuery(query);
+            List<HOSOTHISINH> tableList = new List<HOSOTHISINH>();
+
+            DataTable data = QuanLyTuyenSinhContext.Instance.ExecuteQuery("LOADTableHoSoThiSinh;");
+
+            foreach (DataRow item in data.Rows)
+            {
+                HOSOTHISINH HoSo = new HOSOTHISINH(item);
+                tableList.Add(HoSo);
+            }
+            dataGridView_QLTS.DataSource = tableList;
         }
     }
 }
