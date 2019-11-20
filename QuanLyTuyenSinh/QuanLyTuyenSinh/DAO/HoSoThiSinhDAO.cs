@@ -19,7 +19,7 @@ namespace QuanLyTuyenSinh.DAO
 
         private HoSoThiSinhDAO() { }
 
-        //public void GetLoadHoSoThiSinhList()
+        //public List<HOSOTHISINH> GetLoadHoSoThiSinhList()
         //{
         //    List<HOSOTHISINH> tableList = new List<HOSOTHISINH>();
 
@@ -30,8 +30,8 @@ namespace QuanLyTuyenSinh.DAO
         //        HOSOTHISINH HoSo = new HOSOTHISINH(item);
         //        tableList.Add(HoSo);
         //    }
+        //    return tableList;
 
-     
         //}
     }
 }

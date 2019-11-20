@@ -58,13 +58,28 @@
   <ItemGroup>
     <Compile Include="ACCOUNT.cs" />
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\DoiTuongDAO.cs" />
+    <Compile Include="DAO\HoKhauDAO.cs" />
     <Compile Include="DAO\HoSoThiSinhDAO.cs" />
+    <Compile Include="DAO\KhuVucDAO.cs" />
+    <Compile Include="DAO\NganhDAO.cs" />
+    <Compile Include="DTO\DANTOC.cs" />
+    <Compile Include="DTO\DOITUONG.cs" />
+    <Compile Include="DTO\HOKHAU.cs" />
     <Compile Include="DTO\HOSOTHISINH.cs" />
+    <Compile Include="DTO\KHUVUC.cs" />
+    <Compile Include="DTO\NGANH.cs" />
     <Compile Include="PresentationLayer\Ketqua.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PresentationLayer\Ketqua.Designer.cs">
       <DependentUpon>Ketqua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\Login.cs">
       <SubType>Form</SubType>
@@ -84,11 +99,23 @@
     <Compile Include="PresentationLayer\QuanlyAccount.Designer.cs">
       <DependentUpon>QuanlyAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\quanlydoituong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\quanlydoituong.Designer.cs">
+      <DependentUpon>quanlydoituong.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\Quanlykhuvuc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PresentationLayer\Quanlykhuvuc.Designer.cs">
       <DependentUpon>Quanlykhuvuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\QuanLynganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\QuanLynganh.Designer.cs">
+      <DependentUpon>QuanLynganh.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\QuanLyTuyenSinh.cs">
       <SubType>Form</SubType>
@@ -108,6 +135,9 @@
     <EmbeddedResource Include="PresentationLayer\Ketqua.resx">
       <DependentUpon>Ketqua.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,8 +147,14 @@
     <EmbeddedResource Include="PresentationLayer\QuanlyAccount.resx">
       <DependentUpon>QuanlyAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\quanlydoituong.resx">
+      <DependentUpon>quanlydoituong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\Quanlykhuvuc.resx">
       <DependentUpon>Quanlykhuvuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\QuanLynganh.resx">
+      <DependentUpon>QuanLynganh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\QuanLyTuyenSinh.resx">
       <DependentUpon>QuanLyTuyenSinh.cs</DependentUpon>

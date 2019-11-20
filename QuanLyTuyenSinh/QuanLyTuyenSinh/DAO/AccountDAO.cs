@@ -27,5 +27,24 @@ namespace QuanLyTuyenSinh.DAO
 
             return result.Rows.Count>0;
         }
+
+        public List<ACCOUNT> LoadAccount()
+        {
+            List<ACCOUNT> table = new List<ACCOUNT>();
+            DataTable data = QuanLyTuyenSinhContext.Instance.ExecuteQuery("LOADAccount");
+            foreach(DataRow item in data.Rows)
+            {
+                ACCOUNT account = new ACCOUNT(item);
+                table.Add(account);
+            }
+            return table;
+        }
+
+        public bool Insert(string nameperson,string username,string pass,int type)
+        {
+            int result = QuanLyTuyenSinhContext.Instance.ExecuteNonQuery("INSERTAccount @NamePerson , @UserName , @Pass , @TypePerson", new object[] { nameperson, username, pass, type });
+
+            return result > 0;
+        }
     }
 }

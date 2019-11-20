@@ -32,3 +32,6 @@ C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSin
 C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.csproj.CopyComplete
 C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.exe
 C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.pdb
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.Loading.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.quanlydoituong.resources
+C:\Users\LENOVO\Desktop\QuanLyTuyenSinh\QuanLyTuyenSinh\obj\Debug\QuanLyTuyenSinh.PresentationLayer.QuanLynganh.resources

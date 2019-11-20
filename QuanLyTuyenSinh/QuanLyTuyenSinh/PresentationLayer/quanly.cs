@@ -54,5 +54,45 @@ namespace QuanLyTuyenSinh.PresentationLayer
             if (MessageBox.Show("Ban muon thoat", "Thong Bao", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
             { e.Cancel = true; }
         }
+
+        private void quảnLýAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanlyAccount form = new QuanlyAccount();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void quảnLýSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyTuyenSinh form = new QuanLyTuyenSinh();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void quảnLýKhuVựcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Quanlykhuvuc form = new Quanlykhuvuc();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void quảnLýNgànhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLynganh form = new QuanLynganh();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void quảnLýĐốiTượngƯuTiênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            quanlydoituong form = new quanlydoituong();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
     }
 }

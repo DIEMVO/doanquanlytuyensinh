@@ -25,10 +25,10 @@ namespace QuanLyTuyenSinh.PresentationLayer
             string passWord = tbxpass.Text;
             if (CheckLogin(userName,passWord))
             {
-                QuanLyTuyenSinh form = new QuanLyTuyenSinh();
+                quanly form = new quanly();
                 this.Hide();
-                form.Show();
-                this.Close();
+                form.ShowDialog();
+                this.Show();
             }
             else
             {
@@ -46,12 +46,7 @@ namespace QuanLyTuyenSinh.PresentationLayer
             { e.Cancel = true; }
         }
 
-        private void btnxoa_Click(object sender, EventArgs e)
-        {
-            tbxname.Text = "";
-            tbxpass.Text = "";
-            
-        }
         #endregion
+
     }
 }

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvaccount = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl = new System.Windows.Forms.Panel();
             this.chbxadmin = new System.Windows.Forms.CheckBox();
@@ -51,18 +51,6 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "TYPE";
-            this.Column3.HeaderText = "Quyền hạn";
-            this.Column3.Name = "Column3";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "NAME";
-            this.Column1.HeaderText = "Tên hiển thị";
-            this.Column1.Name = "Column1";
-            // 
             // dgvaccount
             // 
             this.dgvaccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -78,11 +66,23 @@
             this.dgvaccount.Size = new System.Drawing.Size(544, 206);
             this.dgvaccount.TabIndex = 7;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "NAMEPERSON";
+            this.Column1.HeaderText = "Tên hiển thị";
+            this.Column1.Name = "Column1";
+            // 
             // Column2
             // 
             this.Column2.DataPropertyName = "USERNAME";
             this.Column2.HeaderText = "Tên đăng nhập";
             this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "TYPEPERSON";
+            this.Column3.HeaderText = "Quyền hạn";
+            this.Column3.Name = "Column3";
             // 
             // label1
             // 
@@ -123,7 +123,7 @@
             // tbxuser
             // 
             this.tbxuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxuser.Location = new System.Drawing.Point(116, 44);
+            this.tbxuser.Location = new System.Drawing.Point(116, 48);
             this.tbxuser.Margin = new System.Windows.Forms.Padding(2);
             this.tbxuser.Name = "tbxuser";
             this.tbxuser.Size = new System.Drawing.Size(249, 23);
@@ -211,6 +211,7 @@
             this.btnthem.TabIndex = 40;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnxoa
             // 
@@ -257,11 +258,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridView dgvaccount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl;
         private System.Windows.Forms.CheckBox chbxadmin;
@@ -276,5 +273,8 @@
         private System.Windows.Forms.Button btnthem;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

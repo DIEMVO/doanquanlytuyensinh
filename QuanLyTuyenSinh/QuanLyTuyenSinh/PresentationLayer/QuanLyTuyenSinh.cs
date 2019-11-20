@@ -18,10 +18,10 @@ namespace QuanLyTuyenSinh.PresentationLayer
         public QuanLyTuyenSinh()
         {
             InitializeComponent();
-            LoaddataGridView();
+            LoadTable();
         }
 
-        private void LoaddataGridView()
+        private void LoadTable()
         {
             List<HOSOTHISINH> tableList = new List<HOSOTHISINH>();
 

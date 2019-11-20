@@ -35,7 +35,6 @@
             this.tbxname = new System.Windows.Forms.TextBox();
             this.tbxpass = new System.Windows.Forms.TextBox();
             this.btndangnhap = new System.Windows.Forms.Button();
-            this.btnxoa = new System.Windows.Forms.Button();
             this.btnthoat = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -128,21 +127,6 @@
             this.btndangnhap.UseVisualStyleBackColor = false;
             this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click);
             // 
-            // btnxoa
-            // 
-            this.btnxoa.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnxoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnxoa.Location = new System.Drawing.Point(173, 11);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(2);
-            this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(128, 44);
-            this.btnxoa.TabIndex = 5;
-            this.btnxoa.Text = "&Xóa";
-            this.btnxoa.UseVisualStyleBackColor = true;
-            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
-            // 
             // btnthoat
             // 
             this.btnthoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -160,7 +144,6 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btndangnhap);
-            this.panel2.Controls.Add(this.btnxoa);
             this.panel2.Controls.Add(this.btnthoat);
             this.panel2.Location = new System.Drawing.Point(10, 150);
             this.panel2.Name = "panel2";
@@ -196,7 +179,6 @@
         private System.Windows.Forms.TextBox tbxname;
         private System.Windows.Forms.TextBox tbxpass;
         private System.Windows.Forms.Button btndangnhap;
-        private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btnthoat;
         private System.Windows.Forms.Panel panel2;
     }
