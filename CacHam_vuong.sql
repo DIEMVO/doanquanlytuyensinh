@@ -22,19 +22,6 @@ begin
 end
 go
 
---if OBJECT_ID('LOADTableHoSoThiSinh') is not null drop PROC LOADTableHoSoThiSinh;
--- go
-
--- create PROC LOADTableHoSoThiSinh
--- as
--- begin 
---	select SBD, HoDem, Ten, NgaySinh, GioiTinh, TenHuyen,TenTinh, LoaiDoiTuong, TenDanToc, TenNganh, NguyenVong
---	from (((HOSOTHISINH join HOKHAU on HOSOTHISINH.MaHoKhau=HOKHAU.MaHoKhau)  join
---	DOITUONG on DOITUONG.MaDoiTuong=HOSOTHISINH.MaDoiTuong) join 
---	DANTOC on DANTOC.MaDanToc= HOSOTHISINH.MaDanToc) join
---	NGANH on HOSOTHISINH.MaNganh=NGANH.MaNganh
---end
---go
 
 
 use QuanLyTuyenSinh
@@ -216,9 +203,58 @@ end
 go
 
 
+if OBJECT_ID('LOADTableHoSoThiSinh') is not null drop PROC LOADTableHoSoThiSinh;
+ go
+
+ create PROC LOADTableHoSoThiSinh
+ as
+ begin 
+select SBD, HoDem,Ten,NgaySinh,GioiTinh,HOSOTHISINH.MaHoKhau,TenHuyen,TenTinh,HOSOTHISINH.MaDoiTuong,LoaiDoiTuong, HOSOTHISINH.MaDanToc,TenDanToc,Toan,Ly,Hoa,Sinh,Van,Su,Dia,AnhVan
+from ((HOSOTHISINH	join HOKHAU	  on HOSOTHISINH.MaHoKhau=HOKHAU.MaHoKhau) 
+					join DOITUONG on HOSOTHISINH.MaDoiTuong=DOITUONG.MaDoiTuong)
+					join DANTOC	  on HOSOTHISINH.MaDanToc=DANTOC.MaDanToc
+end
+go
+
+if OBJECT_ID('DELETEHoSoThiSinh') is not null drop proc DELETEHoSoThiSinh;
+go
+
+create proc DELETEHoSoThiSinh
+@sbd int
+as
+begin
+	Delete NGUYENVONG where SBD=@sbd;
+	Delete HOSOTHISINH where SBD=@sbd;
+end
+go
 -----------------------
 --test
 
 
 
 
+declare @sbd int
+exec DELETEHoSoThiSinh @sbd=3;
+
+select *
+from HOSOTHISINH
+
+
+select HOKHAU.TenHuyen,HOKHAU.TenTinh,KHUVUC.DiemCongKV
+from HOKHAU join KHUVUC on HOKHAU.MaHoKhau=KHUVUC.MaKhuVuc
+where (KHUVUC.MaKhuVuc)=cast('II' as  int);
+
+select TenKhuVuc
+from KHUVUC
+where MaKhuVuc='II'
+
+select SBD, HoDem,Ten,NgaySinh,GioiTinh,TenHuyen,TenTinh, LoaiDoiTuong, TenDanToc
+from ((HOSOTHISINH join HOKHAU on HOSOTHISINH.MaHoKhau=HOKHAU.MaHoKhau) 
+		join DOITUONG on HOSOTHISINH.MaDoiTuong=DOITUONG.MaDoiTuong)
+		join DANTOC on HOSOTHISINH.MaDanToc=DANTOC.MaDanToc
+
+
+
+
+
+exec LOADTableHoSoThiSinh
