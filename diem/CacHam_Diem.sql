@@ -39,7 +39,7 @@ go
 --end
 --go
 
-
+select * from HOKHAU
 use QuanLyTuyenSinh
 go
 if OBJECT_ID('LOADAccount') is not null drop PROC LOADAccount;
